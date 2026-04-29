@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from '@shared/navbar';
 
@@ -7,6 +7,4 @@ import { Navbar } from '@shared/navbar';
   imports: [RouterOutlet, Navbar],
   templateUrl: './app.html',
 })
-export class App {
-  protected readonly title = signal('maps-app');
-}
+export class App {}

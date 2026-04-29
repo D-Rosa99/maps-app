@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
-import { HomePage } from './pages/home/home.page';
-import { HousesPage } from './pages/houses/houses.page';
-import { MarkersPage } from './pages/markers/markers.page';
+import { HousesPage } from '@pages/houses/houses.page';
+import { MarkersPage } from '@pages/markers/markers.page';
+import { MapPage } from '@pages/map/map.page';
 
 export const routes: Routes = [
   {
     path: 'map',
-    component: HomePage,
+    component: MapPage,
     title: 'Map',
   },
   {
