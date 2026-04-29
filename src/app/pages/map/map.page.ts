@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, viewChild } from '@angular/core';
+import { environment } from '@env/environment';
 import { setOptions, importLibrary } from '@googlemaps/js-api-loader';
 
 @Component({
@@ -19,10 +20,8 @@ export class MapPage implements AfterViewInit {
     if (!this.divEl()?.nativeElement) return;
     const mapEl = this.divEl()!.nativeElement;
 
-    console.log('malEl', mapEl);
-    await new Promise((resolve) => setTimeout(resolve, 80));
+    setOptions({ key: environment.GMAP_KEY });
 
-    setOptions({ key: 'AIzaSyDUYL6p2mE396mXWpJvvxBCDP4bstHdqqI' });
     const { Map } = await importLibrary('maps');
     const map = new Map(mapEl, {
       zoom: 8,

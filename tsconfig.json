@@ -7,6 +7,7 @@
     "paths": {
       "@shared/*": ["src/app/shared/components/*"],
       "@pages/*": ["src/app/pages/*"],
+      "@env/*": ["src/app/environments/*"],
     },
     "strict": true,
     "noImplicitOverride": true,
