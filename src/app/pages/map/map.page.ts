@@ -65,11 +65,9 @@ export class MapPage implements AfterViewInit {
 
   mapEventListener(mapInstance: google.maps.Map){
     mapInstance.addListener('zoom_changed', () => {
-      const mapEL = this.divEl()?.nativeElement;
-      console.log('newZoom', mapEL.getZoom())
-      // this.zoomMap.set(newZoom)
+      const newZoom = mapInstance.getZoom()!
+      this.zoomMap.set(newZoom)
     })
-
 
     this.mapSignal.set(mapInstance)
   }
