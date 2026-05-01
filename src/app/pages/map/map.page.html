@@ -1,1 +1,19 @@
 <div #mapEl></div>
+
+<section id="controls">
+  <h2 class="text-2xl font-bold text-black mb-2">
+    Zoom
+
+    <small class="text-gray-500 font-normal">{{ zoomMap() }}</small>
+  </h2>
+
+  <input
+    type="range"
+    min="0"
+    max="18"
+    [value]="zoomMap()"
+    (input)="zoomMap.set(+inputZoom.value)"
+    #inputZoom
+    class="range range-secondary"
+  />
+</section>

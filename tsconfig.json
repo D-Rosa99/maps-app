@@ -3,12 +3,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
-      "@shared/*": ["src/app/shared/components/*"],
-      "@pages/*": ["src/app/pages/*"],
-      "@env/*": ["src/app/environments/*"],
+      "@shared/*": ["./src/app/shared/components/*"],
+      "@pages/*": ["./src/app/pages/*"],
+      "@env/*": ["./src/app/environments/*"],
     },
+    "types": ["google.maps"],
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
