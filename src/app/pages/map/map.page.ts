@@ -17,8 +17,8 @@ import { setOptions, importLibrary } from '@googlemaps/js-api-loader';
       padding: 10px;
       border-radius: 5px;@types/google.maps
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 25px;
+      left: 20px;
       z-index: 9999;
       box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
       border: 1px solid #e2e8f0;
